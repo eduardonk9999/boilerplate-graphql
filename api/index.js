@@ -1,7 +1,7 @@
 const { ApolloServer } = require("apollo-server");
-const UsersAPI = require("./user/datasource/user");
-const userResolvers = require("./user/resolvers/userResolvers");
 const userSchema = require('./user/schema/user.graphql')
+const userResolvers = require("./user/resolvers/userResolvers");
+const UsersAPI = require("./user/datasource/user");
 
 
 
@@ -14,7 +14,7 @@ const server = new ApolloServer({
   resolvers,
   dataSources: () => {
     return {
-      UsersAPI: new UsersAPI() 
+      usersAPI: new UsersAPI() 
     }
   }
 })
