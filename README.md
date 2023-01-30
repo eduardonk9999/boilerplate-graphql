@@ -1,4 +1,4 @@
-## My Boilerplate GraphQL</>
+## My Boilerplate GraphQL...</>
 
 
 ## :hammer: Como usar o Projeto:
